@@ -7,9 +7,11 @@ related projects.  This little repository will help you do that.  You should be
 running the Raspbian 
 operating system on your Raspberry Pi.
 
+<font color="red">
 NOTE: Following these instructions will clobber your existing startup script
 (/etc/rc.local) and DHCP configuration (/etc/udhcpd.conf).  Proceed with
 caution.
+</font>
 
 After cloning this repository, do the following from your Raspberry Pi's command line:
 
