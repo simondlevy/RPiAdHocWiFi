@@ -1,0 +1,17 @@
+#!/bin/sh -e
+#
+# rc.local
+#
+# This script is executed at the end of each multiuser runlevel.
+# Make sure that the script will "exit 0" on success or any other
+# value on error.
+
+ifconfig wlan0 down
+iwconfig wlan0 mode Ad-Hoc
+iwconfig wlan0 essid Raspberry-Pi-1
+sleep 1
+ifconfig wlan0 192.168.2.2
+ifconfig wlan0 up
+udhcpd /etc/udhcpd.conf
+
+exit 0
