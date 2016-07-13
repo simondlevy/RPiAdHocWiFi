@@ -10,6 +10,6 @@ Proceed with caution.
 
 After cloning this repository, do the following from your Raspberry Pi's command line:
 
-% cd RPiAdHocWiFi<b>
-% sudo cp rc.local /etc<b>
-% sudo cp udhcpd.conf /etc<b>
+% cd RPiAdHocWiFi<br>
+% sudo cp rc.local /etc<br>
+% sudo cp udhcpd.conf /etc<br>
