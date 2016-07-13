@@ -13,8 +13,10 @@ NOTE: Following these instructions will clobber your existing startup script
 caution.
 </b>
 
-After cloning this repository, do the following from your Raspberry Pi's command line:
+After logging into your Raspberry Pi and cloning this repository, do the following from the command line:
 
+% sudo apt install udhcpd
+% sudo touch /var/lib/misc/udhcpd.leases
 % cd RPiAdHocWiFi<br>
 % sudo cp rc.local /etc<br>
 % sudo cp udhcpd.conf /etc<br>
