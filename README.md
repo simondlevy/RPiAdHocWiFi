@@ -15,6 +15,6 @@ caution.
 
 After logging into your Raspberry Pi and cloning this repository, do the following from the command line:
 
-% cd RPiAdHocWifi
-% sudo ./install.sh
-% sudo reboot
+% cd RPiAdHocWifi <br>
+% sudo ./install.sh <br>
+% sudo reboot <br>
