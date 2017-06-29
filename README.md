@@ -15,9 +15,6 @@ caution.
 
 After logging into your Raspberry Pi and cloning this repository, do the following from the command line:
 
-% sudo apt install udhcpd<br>
-% sudo touch /var/lib/misc/udhcpd.leases<br>
-% cd RPiAdHocWiFi<br>
-% sudo cp rc.local /etc<br>
-% sudo cp udhcpd.conf /etc<br>
+% cd RPiAdHocWifi
+% sudo ./install.sh
 % sudo reboot
