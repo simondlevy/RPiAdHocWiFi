@@ -11,7 +11,9 @@ operating system on your Raspberry Pi.
 NOTE: Following these instructions will clobber your existing startup script
 (/etc/rc.local) and DHCP configuration (/etc/udhcpd.conf).  Proceed with
 caution.
-</b>
+<b>
+
+<br>
 
 After logging into your Raspberry Pi and cloning this repository, do the following from the command line:
 
