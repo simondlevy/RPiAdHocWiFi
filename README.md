@@ -13,7 +13,7 @@ NOTE: Following these instructions will clobber your existing startup script
 caution.
 </b>
 
-<br>
+<p>
 
 After logging into your Raspberry Pi and cloning this repository, do the following from the command line:
 
