@@ -42,7 +42,17 @@ ifconfig wlan0 essid Raspberry-Pi-1
 exit 0
 </pre>
 
-If you have a <tt>/etc/udhcpd.conf</tt> on your client, you should make sure that it is empty 
+Now when you open the network preferences on your desktop or laptop computer, you should see <b>Raspberry-Pi-1</b>
+as a wifi network you can join.  From there, you can connect to the Raspberry Pi using ssh:
+
+<pre>
+% ssh pi@192.168.2.2
+</pre>
+
+## Important note
+
+<b>If you have a <tt>/etc/udhcpd.conf</tt> on your client, you should make sure that it is empty 
 (so that the client is not trying to serve up an ad-hoc network).  You should also make sure
 that <tt>/etc/network/interfaces</tt> has no specifications for <tt>wlan0</tt> (since those
-are being specified in <tt>/etc/rc.local</tt>).
+are being specified in <tt>/etc/rc.local</tt>). Otherwise you will likely see a different IP address
+(169.254....) instead of the expected 192.168.2.2</b>
