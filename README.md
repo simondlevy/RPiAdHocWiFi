@@ -51,8 +51,9 @@ as a wifi network you can join.  From there, you can connect to the Raspberry Pi
 
 ## Important note
 
-<b>If you have a <tt>/etc/udhcpd.conf</tt> on your client, you should make sure that it is empty 
+<b>If you have an <tt>/etc/udhcpd.conf</tt> on your client, you should make sure that it is empty 
 (so that the client is not trying to serve up an ad-hoc network).  You should also make sure
-that <tt>/etc/network/interfaces</tt> has no specifications for <tt>wlan0</tt> (since those
-are being specified in <tt>/etc/rc.local</tt>). Otherwise you will likely see a different IP address
+that the <tt>/etc/network/interfaces</tt> on the Raspberry Pi has no
+specifications for <tt>wlan0</tt> (since those are being specified in
+<tt>/etc/rc.local</tt>). Otherwise you will likely see a different IP address
 (169.254....) instead of the expected 192.168.2.2</b>
