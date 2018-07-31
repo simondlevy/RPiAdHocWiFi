@@ -6,8 +6,6 @@
 # Make sure that the script will "exit 0" on success or any other
 # value on error.
 
-pkill wpa_supplicant
-sleep 1
 ifconfig wlan0 down
 iwconfig wlan0 mode Ad-Hoc
 iwconfig wlan0 essid Raspberry-Pi-1  # Change Raspberry-Pi-1 to whatever name you like
