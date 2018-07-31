@@ -9,8 +9,8 @@ operating system on your Raspberry Pi.
 
 <b>
 NOTE: Following these instructions will clobber your existing startup script
-(/etc/rc.local) and DHCP configuration (/etc/udhcpd.conf).  Proceed with
-caution.
+(/etc/rc.local) and DHCP configuration (/etc/udhcpd.conf, /etc/dhcpcd.conf).  
+Proceed with caution!
 </b>
 
 <p>
