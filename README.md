@@ -57,3 +57,17 @@ that the <tt>/etc/network/interfaces</tt> on the Raspberry Pi has no
 specifications for <tt>wlan0</tt> (since those are being specified in
 <tt>/etc/rc.local</tt>). Otherwise you will likely see a different IP address
 (169.254....) instead of the expected 192.168.2.2.
+
+## WEP Key
+
+If you would like to prevent anyone in range from connecting to your ad-hoc network, you can add a WEP key by adding this line:
+<pre>
+iwconfig wlan0 key 3b205742624039762d586f4f3e
+</pre>
+under 
+<pre>
+ifconfig wlan0 essid Raspberry-Pi-1
+</pre>
+where 3b205742624039762d586f4f3e is your key.
+This key must be a hex-key and you can generate one here: http://www.andrewscompanies.com/tools/wep.asp
+Use a 128 bit key.  A 256 bit key does not seem to work.
