@@ -9,6 +9,7 @@
 ifconfig wlan0 down
 iwconfig wlan0 mode Ad-Hoc
 iwconfig wlan0 essid Raspberry-Pi-1  # Change Raspberry-Pi-1 to whatever name you like
+#iwconfig wlan0 key 3b205742624039762d586f4f3e    # Uncomment this line to use a WEP key
 sleep 1
 ifconfig wlan0 192.168.2.2           # This should agree with the IP address in udhcpd.conf
 ifconfig wlan0 up
