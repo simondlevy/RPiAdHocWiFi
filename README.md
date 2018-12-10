@@ -1,11 +1,10 @@
 # RPiAdHocWiFi
 Simple ad-hoc wireless network support for Raspberry Pi.
 
-The RaspberryPi 3 comes with a Broadcom wifi chip onboard, making it easy to
-setup an ad-hoc wifi network for remote sensing, Internet of Things, and
-related projects.  This little repository will help you do that.  You should be
-running the Raspbian 
-operating system on your Raspberry Pi.
+The RaspberryPi 3 and RaspberryPi Zero W come with a Broadcom wifi chip onboard, 
+making it easy to setup an ad-hoc wifi network for remote sensing, Internet of 
+Things, and related projects.  This little repository will help you do that.  
+You should be running the Raspbian operating system on your Raspberry Pi.
 
 <b>
 NOTE: Following these instructions will clobber your existing startup script
@@ -57,6 +56,21 @@ that the <tt>/etc/network/interfaces</tt> on the Raspberry Pi has no
 specifications for <tt>wlan0</tt> (since those are being specified in
 <tt>/etc/rc.local</tt>). Otherwise you will likely see a different IP address
 (169.254....) instead of the expected 192.168.2.2.
+
+## Reversion
+
+After installing the ad-hoc network and connecting you your Pi via SSH or a physical connection, you can revert to your previous Wi-Fi settings by running:
+<pre>
+sudo ./revert.sh
+</pre>
+This will keep the programs installed but undo the changes made by the installation.
+
+## Uninstallation
+
+To completely uninstall the settings and packages (udhcp and busybox) and revert to your previous Wi-Fi settings run:
+<pre>
+sudo ./uninstall.sh
+</pre>
 
 ## WEP Key
 
