@@ -85,3 +85,7 @@ ifconfig wlan0 essid Raspberry-Pi-1
 where 3b205742624039762d586f4f3e is your key.
 This key must be a hex-key and you can generate one here: http://www.andrewscompanies.com/tools/wep.asp
 Use a 128 bit key.  A 256 bit key does not seem to work.
+
+## Related projects
+
+[sockets](https://github.com/simondlevy/socket)
