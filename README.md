@@ -88,4 +88,4 @@ Use a 128 bit key.  A 256 bit key does not seem to work.
 
 ## Related projects
 
-[sockets](https://github.com/simondlevy/socket)
+[sockets](https://github.com/simondlevy/sockets)
